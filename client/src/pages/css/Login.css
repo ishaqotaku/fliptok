@@ -1,0 +1,57 @@
+.login-page {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-row {
+  width: 100%;
+}
+
+.login-card {
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(15px);
+  color: white;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.login-card .form-control,
+.login-card .form-select {
+  background: rgba(255,255,255,0.05);
+  color: white;
+  border: none;
+}
+
+.login-card .form-control:focus,
+.login-card .form-select:focus {
+  box-shadow: 0 0 8px #0d6efd;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.login-card button {
+  transition: all 0.3s ease;
+}
+
+.login-card button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px #0d6efd;
+}
+
+/* Gradient text for branding */
+.text-gradient {
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.branding-col {
+  padding: 2rem;
+}

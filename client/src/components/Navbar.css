@@ -1,0 +1,92 @@
+/* Dark / Black navbar that complements the dashboard but stays distinct */
+.navbar-black {
+  background: rgba(8,8,8,0.95); /* near-black */
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  color: #fff;
+  backdrop-filter: blur(6px); /* ok to use, doesn't cause vendor warnings */
+}
+
+/* Slight hover to show interactivity */
+.navbar-black:hover {
+  background: rgba(12,12,12,0.98);
+}
+
+/* Brand */
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.45);
+}
+.brand-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.25px;
+  line-height: 1;
+}
+
+/* Muted role text */
+.muted-role {
+  color: rgba(255,255,255,0.65);
+}
+
+/* Toggler button - three white bars */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  padding: 0.25rem;
+}
+.navbar-toggler:focus { outline: none; box-shadow: none; }
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+.navbar-toggler-icon div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 2px;
+}
+.navbar-toggler-icon div:nth-child(1) { top: 0; }
+.navbar-toggler-icon div:nth-child(2) { top: 8px; }
+.navbar-toggler-icon div:nth-child(3) { bottom: 0; }
+
+/* Button styles */
+.btn-black {
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+  background: rgba(255,255,255,0.04);
+  color: #fff !important;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 0.45rem 0.9rem;
+}
+.btn-black:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(30,30,30,0.6);
+  background: rgba(255,255,255,0.06);
+}
+
+/* Ensure the light button looks right on dark background */
+.btn-light.btn-black {
+  background: rgba(255,255,255,0.06);
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Small text */
+.navbar-text { color: #fff; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .brand-text { font-size: 1rem; }
+  .brand-icon { width: 30px; height: 30px; }
+  .navbar-text { font-size: 0.85rem; }
+  .btn-black { font-size: 0.86rem; padding: 0.35rem 0.7rem; }
+}
